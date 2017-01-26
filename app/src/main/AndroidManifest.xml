@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.nishay.workoutplanner">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/calendar"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WorkoutDayActivity"
+            android:label="@string/title_activity_add_workout_day"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nishay.workoutplanner.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".WorkoutSetActivity"
+            android:label="@string/title_activity_workout_set"
+            android:parentActivityName=".WorkoutDayActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nishay.workoutplanner.WorkoutDayActivity"/>
+        </activity>
+        <activity
+            android:name=".WorkoutExerciseActivity"
+            android:label="@string/title_activity_workout_exercise"
+            android:parentActivityName=".WorkoutSetActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nishay.workoutplanner.WorkoutSetActivity"/>
+        </activity>
+        <activity
+            android:name=".GoActivity"
+            android:label="@string/title_activity_go"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nishay.workoutplanner.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".GraphActivity"
+            android:label="@string/title_activity_graph"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nishay.workoutplanner.MainActivity"/>
+        </activity>
+    </application>
+
+</manifest>

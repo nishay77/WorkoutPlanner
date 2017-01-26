@@ -1,0 +1,17 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nishay.workoutplanner.WorkoutDayActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/workout_day_new_edit_text"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="40dp"
+        android:hint="e.g. &quot;Day A&quot;"
+        android:selectAllOnFocus="true"
+        android:singleLine="true" />
+
+</FrameLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/go_relative_layout"
+                android:background="@drawable/outline">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Name\n5x5\n2 lbs"
+        android:id="@+id/go_exercise_name"
+        android:padding="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="46dp"
+        android:text="0"
+        android:id="@+id/go_count_text_view"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="/5 SETS"
+        android:id="@+id/go_max_sets_count_text_view"
+        android:layout_alignBaseline="@+id/go_count_text_view"
+        android:layout_alignBottom="@+id/go_count_text_view"
+        android:layout_toRightOf="@+id/go_count_text_view"
+        android:layout_toEndOf="@+id/go_count_text_view"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/go_plus_button"
+        android:src="@android:drawable/ic_input_add"
+        android:clickable="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"/>
+
+</RelativeLayout>

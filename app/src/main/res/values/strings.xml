@@ -1,0 +1,13 @@
+<resources>
+    <!--Name strings -->
+    <string name="app_name">Workout Planner</string>
+    <string name="main_menu_settings">Settings</string>
+    <string name="workout_day">Workout Days</string>
+    <string name="workout_set">Workout Sets</string>
+    <string name="title_activity_add_workout_day">AddWorkoutDayActivity</string>
+    <string name="no_workouts">Click here to add workouts to this day.</string>
+    <string name="title_activity_workout_set">WorkoutSetActivity</string>
+    <string name="title_activity_workout_exercise">WorkoutExerciseActivity</string>
+    <string name="title_activity_go">Workout In Progress...</string>
+    <string name="title_activity_graph">Progress</string>
+</resources>

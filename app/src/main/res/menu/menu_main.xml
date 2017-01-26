@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.nishay.workoutplanner.MainActivity">
+    <item
+        android:id="@+id/add_workout_day"
+        android:orderInCategory="90"
+        android:title="Setup"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/graph"
+        android:orderInCategory="91"
+        android:title="Progress"
+        app:showAsAction="ifRoom" />
+
+</menu>

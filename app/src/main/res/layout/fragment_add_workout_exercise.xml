@@ -1,0 +1,119 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nishay.workoutplanner.WorkoutDayActivity"
+    android:stretchColumns="*"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <TableRow
+        android:layout_width="0dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exercise Name"
+            android:layout_weight="1"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/workout_exercise_name_edit_text"
+            android:layout_margin="5dp"
+            android:hint="e.g. &quot;Bench Press&quot;"
+            android:layout_weight="2"
+            android:selectAllOnFocus="true"
+            android:singleLine="true" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="0dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number of Sets"
+            android:layout_weight="1"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/workout_exercise_sets_edit_text"
+            android:layout_margin="5dp"
+            android:hint="e.g. &quot;5&quot;"
+            android:layout_weight="2"
+            android:inputType="number"
+            android:selectAllOnFocus="true"
+            android:singleLine="true" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="0dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number of Reps"
+            android:layout_weight="1"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/workout_exercise_reps_edit_text"
+            android:layout_margin="5dp"
+            android:hint="e.g. &quot;5&quot;"
+            android:inputType="number"
+            android:layout_weight="2"
+            android:selectAllOnFocus="true"
+            android:singleLine="true" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="0dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight (lbs)"
+            android:layout_weight="1"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/workout_exercise_weight_edit_text"
+            android:layout_margin="5dp"
+            android:hint="e.g. &quot;250&quot;"
+            android:inputType="numberDecimal"
+            android:layout_weight="2"
+            android:selectAllOnFocus="true"
+            android:singleLine="true" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="0dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Increment (lbs)"
+            android:layout_weight="1"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/workout_exercise_increment_edit_text"
+            android:layout_margin="5dp"
+            android:hint="e.g. &quot;5&quot;"
+            android:inputType="numberDecimal"
+            android:layout_weight="2"
+            android:selectAllOnFocus="true"
+            android:singleLine="true" />
+
+    </TableRow>
+
+</TableLayout>
